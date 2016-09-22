@@ -1,4 +1,4 @@
-function [] = plot2DClassifier(X,y,model)
+function [] = classifier2Dplot(X,y,model)
 
 increment = 500;
 

@@ -5,6 +5,11 @@ function [model] = decisionStump(X,y)
 
 [n,d] = size(X);
 
+% [y_xs, y_ys] = size(y);
+% if y_xs == 0 || y_ys == 0
+%     y = [];
+% end
+
 % Address the case where we do not split
 y_mode = mode(y);
 minError = sum(y ~= y_mode);
