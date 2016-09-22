@@ -15,12 +15,21 @@ error = sum(yhat ~= y)/n;
 fprintf('Error with majority predictor: %.2f\n',error);
 
 %% Fit decision stump and compute error
-model = decisionStumpEquality(X,y);
+%model = decisionStumpEquality(X,y);
+%model = decisionStump(X,y);
 
 % Evaluate training error
 yhat = model.predict(model,X);
 error = sum(yhat ~= y)/n;
 fprintf('Error with equality-rule decision stump: %.2f\n',error);
+
+%% Fit decision stump and compute error
+model = decisionStump(X,y);
+
+% Evaluate training error
+yhat = model.predict(model,X);
+error = sum(yhat ~= y)/n;
+fprintf('Error with decision stump: %.2f\n',error);
 
 % Plot classifier
 figure(2);
