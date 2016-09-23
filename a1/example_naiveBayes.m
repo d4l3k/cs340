@@ -1,3 +1,5 @@
+addpath ./catVersions
+
 clear all
 load newsgroups.mat
 
@@ -5,7 +7,8 @@ load newsgroups.mat
 T = length(yvalidate);
 
 % Compute validation error with decision tree
-depth = 20;
+depth = 2;
+%depth = 20;
 model = decisionTreeInfoGain(X,y,depth);
 yhat = model.predict(model,Xvalidate);
 errorValidate = sum(yhat ~= yvalidate)/T;

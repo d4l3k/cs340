@@ -18,7 +18,13 @@ p_y = counts/n; % This is the probability of each class, p(y(i) = c)
 % We will store:
 %   p(x(i,j) = 1 | y(i) = c) as p_xy(j,1,c)
 %   p(x(i,j) = 0 | y(i) = c) as p_xy(j,2,c)
-p_xy = (1/2)*ones(d,2,k); 
+p_xy = (1/2)*ones(d,2,k);
+for j = 1:d
+    for c = 1:k
+        p_xy(j, 1, c) = sum(X(:, j)==1 & y==c)/counts(c);
+        p_xy(j, 2, c) = sum(X(:, j)==0 & y==c)/counts(c);
+    end
+end
 
 model.k = k;
 model.p_y = p_y;
