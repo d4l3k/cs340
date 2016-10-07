@@ -1,5 +1,5 @@
 %% Clustering
-load clusterData.mat
+load clusterData2.mat
 
 doPlot = 0; % Turn on visualization of the algorithm in action (2D data)
 
@@ -11,8 +11,8 @@ for k = ks
   error = Inf;
 
   %% K-Means Clustering
-  for i=1:50
-    potentialModel = clusterKmeans(X,k,doPlot);
+  for i = 1:50
+    potentialModel = clusterKmedians(X,k,doPlot);
     e = potentialModel.error(potentialModel,X);
     if e < error
       fprintf('Old error %d, new %d\n', error, e)
@@ -24,15 +24,18 @@ for k = ks
   end
 
   fprintf('Final error %d\n', error)
-  errors = [errors ; error]
+  errors = [errors ; error];
+
+  % Use model to cluster training data
+  if k == 4
+    y = model.predict(model,X);
+    clustering2Dplot(X,y,model.W)
+    %print -dpng 3.3.1.png
+  end
 end
 
-% Use model to cluster training data
-%y = model.predict(model,X);
-%clustering2Dplot(X,y,model.W)
-%print -dpng 3.1.2.png
-
+clf
 plot(ks, errors)
 ylabel('error')
 xlabel('k')
-print -dpng 3.2.3.png
+print -dpng 3.3.4.png

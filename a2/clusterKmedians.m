@@ -1,12 +1,12 @@
-function [model] = clusterKmeans(X,k,doPlot)
-% [model] = clusterKmeans(X,k,doPlot)
+function [model] = clusterKmedians(X,k,doPlot)
+% [model] = clusterKmedians(X,k,doPlot)
 %
-% K-means clustering
+% K-medians clustering
 
 [n,d] = size(X);
 y = ones(n,1);
 
-% Choose random points to initialize means
+% Choose random points to initialize median
 W = zeros(k,d);
 for k = 1:k
     i = ceil(rand*n);
@@ -22,10 +22,11 @@ while 1
         clustering2Dplot(X,y,W)
     end
 
-    % Compute (squared) Euclidean distance between each data point and each mean
+    % Compute (squared) Euclidean distance between each data point and each
+    % median
     distances = X2 + ones(n,d)*(W').^2 - 2*X*W';
 
-    % Assign each data point to closest mean
+    % Assign each data point to closest median
     [~,y] = min(distances,[],2);
 
     % Draw visualization
@@ -33,13 +34,16 @@ while 1
         clustering2Dplot(X,y,W)
     end
 
-    % Compute mean of each cluster
+    % Compute median of each cluster
     for k = 1:k
-        W(k,:) = mean(X(y==k,:),1);
+        tX = X(y==k,:);
+        %size(tX)
+        if rows(tX) != 0
+          W(k,:) = median(tX,1);
+        end
     end
 
     changes = sum(y ~= y_old);
-    %fprintf('Running K-means, difference = %f\n',changes);
 
     % Stop if no point changed cluster
     if changes == 0
@@ -58,15 +62,15 @@ function [y] = predict(model,X)
 W = model.W;
 k = size(W,1);
 
-% Compute Euclidean distance between each data point and each mean
+% Compute Euclidean distance between each data point and each median
 X2 = X.^2*ones(d,k);
 distances = sqrt(X2 + ones(t,d)*(W').^2 - 2*X*W');
 
-% Assign each data point to closest mean
+% Assign each data point to closest median
 [~,y] = min(distances,[],2);
 end
 
 function [e] = error(model,X)
   c = model.predict(model,X);
-  e = sum(sum((X-model.W(c,:)).^2));
+  e = sum(sum(abs(X-model.W(c,:))));
 end

@@ -14,11 +14,11 @@ visited = zeros(n,1);
 % k will count the number of clusters we've found
 k = 0;
 for i = 1:n
-    if ~visited(i) 
+    if ~visited(i)
         % We only need to consider examples that have never been visited
         visited(i) = 1;
         neighbors = find(D(:,i) <= radius);
-        if length(neighbors) >= minPts 
+        if length(neighbors) >= minPts
             % We found a new cluster
             k = k + 1;
             [visited,y] = expand(X,i,neighbors,k,radius,minPts,D,visited,y,doPlot);
@@ -27,6 +27,18 @@ for i = 1:n
 end
 model.Xtrain = X;
 model.y = y;
+    if doPlot == 2 && size(X,2) == 2
+        % Make plot
+        clf;hold on;
+        colors = getColorsRGB;
+        h = plot(X(y==0,1),X(y==0,2),'.');
+        set(h,'Color',[0 0 0]);
+        for k = 1:k
+            h = plot(X(y==k,1),X(y==k,2),'.');
+            set(h,'Color',colors(k,:));
+        end
+    end
+    model.k = k;
 end
 
 function [visited,y] = expand(X,i,neighbors,k,radius,minPts,D,visited,y,doPlot)
@@ -39,7 +51,7 @@ while 1
     end
     n = neighbors(ind);
     y(n) = k;
-    
+
     if ~visited(n)
         visited(n) = 1;
         neighbors2 = find(D(:,n) <= radius);
@@ -47,8 +59,8 @@ while 1
             neighbors = [neighbors;setdiff(neighbors2,neighbors)];
         end
     end
-    
-    if doPlot && size(X,2) == 2
+
+    if doPlot == 1 && size(X,2) == 2
         % Make plot
         clf;hold on;
         colors = getColorsRGB;
@@ -58,8 +70,7 @@ while 1
             h = plot(X(y==k,1),X(y==k,2),'.');
             set(h,'Color',colors(k,:));
         end
-        pause(.01);
     end
-    
+
 end
 end

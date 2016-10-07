@@ -2,7 +2,15 @@ function [model] = decisionForest(X,y,depth,nBootstraps)
 
 % Fit model to each boostrap sample of data
 for m = 1:nBootstraps
-    model.subModel{m} = decisionTree(X,y,depth);
+    Xbootstrap = X;
+    ybootstrap = y;
+    n = rows(X);
+    for i = 1:n
+        j = ceil(rand * n);
+        Xbootstrap(i,:) = X(j,:);
+        ybootstrap(i,:) = y(j,:);
+    end
+    model.subModel{m} = randomTree(Xbootstrap,ybootstrap,depth);
 end
 
 model.predict = @predict;
