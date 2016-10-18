@@ -8,8 +8,11 @@ load basisData.mat % Loads X and y
 [n,d] = size(X);
 
 % Split training data into a training and a validation set
-Xtrain = X(1:n/2,:);
-ytrain = y(1:n/2);
+ordering = randperm(n);
+X = X(ordering,:);
+y = y(ordering,:);
+Xtrain = X(n/2,:);
+ytrain = y(n/2,:);
 Xvalid = X(n/2+1:end,:);
 yvalid = y(n/2+1:end,:);
 
@@ -17,15 +20,15 @@ yvalid = y(n/2+1:end,:);
 %   training on the train set and validating on the validation set
 minErr = inf;
 for sigma = 2.^[-15:15]
-    
+
     % Train on the training set
     model = leastSquaresRBF(Xtrain,ytrain,sigma);
-    
+
     % Compute the error on the validation set
     yhat = model.predict(model,Xvalid);
     validError = sum((yhat - yvalid).^2)/(n/2);
     fprintf('Error with sigma = %.3e = %.2f\n',sigma,validError);
-    
+
     % Keep track of the lowest validation error
     if validError < minErr
         minErr = validError;

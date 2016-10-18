@@ -7,7 +7,7 @@ close all
 load basisData.mat % Loads X and y
 [n,d] = size(X);
 
-for p = 0:10
+for p = 0:15
   % Fit least-squares model
   model = leastSquaresBasis(X,y,p);
 
