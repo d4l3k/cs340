@@ -1,5 +1,4 @@
 function [model] = softmaxClassifier(X,y)
-% Classification using one-vs-all with logistic loss.
 
 % Compute sizes
 [n,d] = size(X);
