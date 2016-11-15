@@ -21,8 +21,7 @@ maxFunEvals = 1000; % Maximum number of evaluations of objective
 verbose = 1; % Whether or not to display progress of algorithm
 
 
-W = findMin(@softmaxLoss,W,maxFunEvals,verbose,X,y,d,k)
-W = autoGrad(w,@softmaxLoss,X,y,d,k);
+W = findMin(@softmaxLoss,W,maxFunEvals,verbose,X,y,d,k);
 
 model.W = reshape(W, d, k);
 model.predict = @predict;
