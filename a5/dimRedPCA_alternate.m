@@ -14,17 +14,17 @@ R = Z*W-X;
 f = sum(sum(R.^2));
 for iter = 1:50
     fOld = f;
-    
+
     % Update Z
     Z(:) = findMin(@funObjZ,Z(:),10,0,X,W);
-    
+
     % Update W
     W(:) = findMin(@funObjW,W(:),10,0,X,Z);
-    
+
     R = Z*W-X;
     f = sum(sum(R.^2));
     fprintf('Iteration %d, loss = %.5e\n',iter,f);
-    
+
     if fOld - f < 1e-4
         break;
     end
@@ -64,7 +64,9 @@ W = reshape(W,[k d]);
 
 % Compute function value
 R = Z*W-X;
-f = sum(sum(R.^2));
+epsilon = 0.0001
+% f = sum(sum(R.^2));
+f = sum(sum(sqrt(R.^2+epsilon)));
 
 % Compute derivative with respect to each residual
 dR = R;
@@ -84,7 +86,8 @@ Z = reshape(Z,[n k]);
 
 % Compute function value
 R = Z*W-X;
-f = sum(sum(R.^2));
+% f = sum(sum(R.^2));
+f = sum(sum(sqrt(R.^2+epsilon)));
 
 % Compute derivative with respect to each residual
 dR = R;
