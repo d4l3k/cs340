@@ -1,8 +1,10 @@
 load basisData.mat
 [n,d] = size(X);
 
+d+=1
+
 % Choose network structure
-nHidden = [3 3 3];
+nHidden = [6];
 
 % Count number of parameters and initialize weights 'w'
 nParams = d*nHidden(1);
@@ -13,17 +15,21 @@ nParams = nParams+nHidden(end);
 w = randn(nParams,1);
 prevw = w;
 
+function xb = applyBasis(X)
+  xb = [ones(rows(X),1) X];
+end
+
 % Train with stochastic gradient
-maxIter = 10000;
-stepSize = 1e-1;
-funObj = @(w,i)MLPregressionLoss(w,X(i,:),y(i),nHidden);
+maxIter = 20000;
+stepSize = 2e-3;
+funObj = @(w,i)MLPregressionLoss(w,applyBasis(X(i,:)),y(i),nHidden);
 for t = 1:maxIter
 
     % The actual stochastic gradient algorithm:
     i = ceil(rand*n);
     [f,g] = funObj(w,i);
     alphat = stepSize/sqrt(t);
-    betat = 0.5;
+    betat = 0.0;
     tmpw = w;
     w = w - alphat*g + betat*(w-prevw);
     prevw = tmpw;
@@ -33,23 +39,23 @@ for t = 1:maxIter
         fprintf('Training iteration = %d\n',t-1);
         figure(1);clf;hold on
         Xhat = [-10:.05:10]';
-        yhat = MLPregressionPredict(w,Xhat,nHidden);
+        yhat = MLPregressionPredict(w,applyBasis(Xhat),nHidden);
         plot(X,y,'.');
         h=plot(Xhat,yhat,'g-','LineWidth',3);
         drawnow;
 
         % Compute training error
-        yhat = MLPregressionPredict(w,X,nHidden);
-        trainError = sum((yhat - y).^2)/rows(y);
+        yhat = MLPregressionPredict(w,applyBasis(X),nHidden);
+        trainError = sum((yhat - y).^2)./rows(y);
         fprintf('Training error = %.2f\n',trainError);
-        fprintf('Alpha = %f, Beta = %f\n', alphat, betat);
+        fprintf('Alpha = %f, Beta = %f, W = %f\n', alphat, betat, sum(abs(w)));
     end
 
 end
 
 % Compute test error
 yhat = MLPregressionPredict(w,Xtest,nHidden);
-testError = sum((yhat - ytest).^2)/rows(ytest);
+testError = sum((yhat - ytest).^2)./rows(ytest);
 fprintf('Test error = %.2f\n',testError);
 
 print -dpng ./2.png

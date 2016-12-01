@@ -11,19 +11,15 @@ for layer = 2:length(nHidden) % Weight matrix W(m) for m > 1
 end
 w = Ww(startIndex+1:startIndex+nHidden(end)); % Final weight vector 'w'
 
-%h = @tanh; % Activation function
-%dh = @(z) sech(z).^2; % Derivative of activiation function
-
-% Use sigmoid for activation function instead.
-h = @sigmoid;
-dh = @(z) sigmoid(z).*(1-sigmoid(z));
+h = @tanh; % Activation function
+dh = @(z) sech(z).^2; % Derivative of activiation function
 
 % Initialize gradient vector
 f = 0;
 if nargout > 1
     gradInput = zeros(size(W1));
     for layer = 2:length(nHidden)
-       gradHidden{layer-1} = zeros(size(Wm{layer-1}));
+       gradHidden{layer-1} = zeros(size(Wm{layer-1})); 
     end
     gradOutput = zeros(size(w));
 end
@@ -37,10 +33,10 @@ for i = 1:nInstances
         z{layer} = h(innerProduct{layer});
     end
     yhat = z{end}*w;
-
+    
     r = yhat-y(i);
     f = f + r^2;
-
+    
     if nargout > 1
         dr = 2*r;
         err = dr;
@@ -68,7 +64,7 @@ for i = 1:nInstances
         end
 
     end
-
+    
 end
 
 % Put Gradient into vector
@@ -82,14 +78,3 @@ if nargout > 1
     end
     g(startIndex+1:startIndex+nHidden(end)) = gradOutput;
 end
-
-% Add an L2 regularizer.
-%f += sum(Ww.^2)/2;
-%g += Ww;
-
-end
-
-function [z] = sigmoid(y)
-z = ones(size(y))./(1+exp(-y));
-end
-
