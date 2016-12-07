@@ -6,17 +6,24 @@ function [f,g] = MLPregressionLoss(Ww,X,y,nHidden)
 W1 = reshape(Ww(1:nVars*nHidden(1)),nVars,nHidden(1)); % Weight matrix W(1)
 startIndex = nVars*nHidden(1);
 for layer = 2:length(nHidden) % Weight matrix W(m) for m > 1
-  Wm{layer-1} = reshape(Ww(startIndex+1:startIndex+nHidden(layer-1)*nHidden(layer)),nHidden(layer-1),nHidden(layer));
+  r = nHidden(layer-1); % add row for bias variable
+  c = nHidden(layer);
+  lw = reshape(Ww(startIndex+1:startIndex+r*c),r,c);
+  Wm{layer-1} = lw;
   startIndex = startIndex+nHidden(layer-1)*nHidden(layer);
 end
 w = Ww(startIndex+1:startIndex+nHidden(end)); % Final weight vector 'w'
 
-%h = @tanh; % Activation function
-%dh = @(z) sech(z).^2; % Derivative of activiation function
+h = @(z) 1.7159*tanh(2/3*z); % Activation function
+dh = @(z) 1.14393*sech(2/3*z).^2; % Derivative of activiation function
 
 % Use sigmoid for activation function instead.
-h = @sigmoid;
-dh = @(z) sigmoid(z).*(1-sigmoid(z));
+%h = @sigmoid;
+%dh = @(z) sigmoid(z).*(1-sigmoid(z));
+
+% ReLU
+%h = @(x) (x >= 0).*x + 0;
+%dh = @(x) (x >= 0).*(x.^0) + 0;
 
 % Initialize gradient vector
 f = 0;
@@ -84,8 +91,8 @@ if nargout > 1
 end
 
 % Add an L2 regularizer.
-%f += sum(Ww.^2)/2;
-%g += Ww;
+%f += sum(Ww.^2);
+%g += 2*Ww;
 
 end
 
