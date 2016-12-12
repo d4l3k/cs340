@@ -167,10 +167,18 @@
             <para/>
             <para/>
             <para/>
-            <para/>
             <ITEXT CH="- Compute p(y=&quot;spam&quot;|xi) &gt; p(y=&quot;not spam&quot;,xi)"/>
             <para/>
             <ITEXT CH="- Need to estimate p(xi|y=&quot;spam&quot;)"/>
+            <para/>
+            <ITEXT CH="- Runtime: Test: O(kd); Train: O(nkd+n)"/>
+            <para/>
+            <para/>
+            <para/>
+            <ITEXT CH="Bayes Rule:"/>
+            <para/>
+            <para/>
+            <para/>
             <para/>
             <para/>
             <para/>
@@ -186,7 +194,7 @@
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="411.8496241" YPOS="129.8947368" WIDTH="260.1503759" HEIGHT="533.1052632" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 260.15 0 260.15 0 260.15 0 260.15 0 260.15 533.105 260.15 533.105 260.15 533.105 260.15 533.105 0 533.105 0 533.105 0 533.105 0 533.105 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 260.15 0 260.15 0 260.15 0 260.15 0 260.15 533.105 260.15 533.105 260.15 533.105 260.15 533.105 0 533.105 0 533.105 0 533.105 0 533.105 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="411.8496241" YPOS="129.8947368" WIDTH="260.1503759" HEIGHT="633.2302632" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 260.15 0 260.15 0 260.15 0 260.15 0 260.15 633.23 260.15 633.23 260.15 633.23 260.15 633.23 0 633.23 0 633.23 0 633.23 0 633.23 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 260.15 0 260.15 0 260.15 0 260.15 0 260.15 633.23 260.15 633.23 260.15 633.23 260.15 633.23 0 633.23 0 633.23 0 633.23 0 633.23 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <ITEXT CH="Assignment 2"/>
             <para/>
             <para/>
@@ -259,12 +267,21 @@
             <para/>
             <ITEXT CH="- finding cluster is expensive"/>
             <para/>
+            <ITEXT CH="- O(n^2d)"/>
+            <para/>
             <para/>
             <ITEXT CH="Lp-norms: L1, L2, L-inf"/>
             <para/>
+            <para/>
+            <para/>
+            <para/>
+            <para/>
+            <para/>
+            <ITEXT CH="Elbow method: choose k in which the the sharpest elbow (biggest change in slope) for minimum error vs k."/>
+            <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="412.03007518797" YPOS="620.308270676692" WIDTH="177.443609022556" HEIGHT="40.6015037593985" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.332799211142611" LOCALSCY="0.332799211142611" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../../2016-12-10-155539_362x122_scrot.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 177.444 0 177.444 0 177.444 0 177.444 0 177.444 40.6015 177.444 40.6015 177.444 40.6015 177.444 40.6015 0 40.6015 0 40.6015 0 40.6015 0 40.6015 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 177.444 0 177.444 0 177.444 0 177.444 0 177.444 40.6015 177.444 40.6015 177.444 40.6015 177.444 40.6015 0 40.6015 0 40.6015 0 40.6015 0 40.6015 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="421.03007518797" YPOS="667.308270676692" WIDTH="177.443609022556" HEIGHT="40.6015037593985" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.332799211142611" LOCALSCY="0.332799211142611" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../../2016-12-10-155539_362x122_scrot.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 177.444 0 177.444 0 177.444 0 177.444 0 177.444 40.6015 177.444 40.6015 177.444 40.6015 177.444 40.6015 0 40.6015 0 40.6015 0 40.6015 0 40.6015 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 177.444 0 177.444 0 177.444 0 177.444 0 177.444 40.6015 177.444 40.6015 177.444 40.6015 177.444 40.6015 0 40.6015 0 40.6015 0 40.6015 0 40.6015 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
@@ -289,9 +306,11 @@
             <para/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="140" YPOS="1793.23308270677" WIDTH="233.684210526316" HEIGHT="210.766917293233" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 233.684 0 233.684 0 233.684 0 233.684 0 233.684 210.767 233.684 210.767 233.684 210.767 233.684 210.767 0 210.767 0 210.767 0 210.767 0 210.767 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 233.684 0 233.684 0 233.684 0 233.684 0 233.684 210.767 233.684 210.767 233.684 210.767 233.684 210.767 0 210.767 0 210.767 0 210.767 0 210.767 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="140" YPOS="2006.23308270677" WIDTH="233.684210526316" HEIGHT="367.76691729323" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 233.684 0 233.684 0 233.684 0 233.684 0 233.684 367.767 233.684 367.767 233.684 367.767 233.684 367.767 0 367.767 0 367.767 0 367.767 0 367.767 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 233.684 0 233.684 0 233.684 0 233.684 0 233.684 367.767 233.684 367.767 233.684 367.767 233.684 367.767 0 367.767 0 367.767 0 367.767 0 367.767 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <para/>
             <ITEXT CH="Assignment 5:"/>
+            <para/>
+            <ITEXT CH="Principle Compontent Analysis"/>
             <para/>
             <ITEXT CH="PCA (computing 1st PC, scaling issue, PCA for visualization, PCA for compression)"/>
             <para/>
@@ -304,13 +323,35 @@
             <ITEXT CH="- reduce dimensionality"/>
             <para/>
             <para/>
+            <para/>
+            <ITEXT CH="- Solve via: "/>
+            <para/>
+            <ITEXT CH="  - Singular value decomposition (SVD) non-iterative"/>
+            <para/>
+            <ITEXT CH="  - Alternate between updating W and Z"/>
+            <para/>
+            <ITEXT CH="  - Stochastic gradient / Gradient Descent"/>
+            <para/>
+            <ITEXT CH="- X: n by d, Z: n by k, W: k x d"/>
+            <para/>
+            <para/>
             <ITEXT CH="Beyond PCA (different loss functions, effect of regularizers)"/>
             <para/>
-            <ITEXT CH="Multi-dimensional scaling (basic model, ISOMAP and geodesic distance)"/>
+            <ITEXT CH="- PCA minimized approximation error"/>
+            <para/>
+            <ITEXT CH="- PCA maximizes variance"/>
+            <para/>
+            <para/>
+            <para/>
+            <ITEXT CH="- Regularizers can split into different components, sparsity"/>
+            <para/>
+            <ITEXT CH="- Non-negative matrix factorization"/>
+            <para/>
+            <ITEXT CH="  - Regularizes, negative can't cancel out large values"/>
             <para/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="425.563909774436" YPOS="1794" WIDTH="226.315789473684" HEIGHT="96.0000000000005" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 226.316 0 226.316 0 226.316 0 226.316 0 226.316 96 226.316 96 226.316 96 226.316 96 0 96 0 96 0 96 0 96 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 226.316 0 226.316 0 226.316 0 226.316 0 226.316 96 226.316 96 226.316 96 226.316 96 0 96 0 96 0 96 0 96 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="425.563909774436" YPOS="2153" WIDTH="244.436090225564" HEIGHT="96.0000000000005" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 244.436 0 244.436 0 244.436 0 244.436 0 244.436 96 244.436 96 244.436 96 244.436 96 0 96 0 96 0 96 0 96 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 244.436 0 244.436 0 244.436 0 244.436 0 244.436 96 244.436 96 244.436 96 244.436 96 0 96 0 96 0 96 0 96 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <ITEXT CH="Assignment 6:"/>
             <para/>
             <ITEXT CH="PageRank (random walk model)"/>
@@ -359,6 +400,8 @@ $f(w)=\sum_{i=1}^n \log(1+\exp(-y_iw^Tx_i)) + \frac \lambda 2 \lVert w \rVert^2$
             <ITEXT CH="- L Infinite = max, log-sum-exp is smooth approx"/>
             <para/>
             <ITEXT CH="  - LSE(x1,...,xn) = log(exp(x1)+...+exp(xn))"/>
+            <para/>
+            <ITEXT CH="- Frobenius Norm: sqrt(each element squared)"/>
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
@@ -370,12 +413,28 @@ $f(w)=\sum_{i=1}^n \log(1+\exp(-y_iw^Tx_i)) + \frac \lambda 2 \lVert w \rVert^2$
                 <PROPERTY name="fontsize" value="11pt"/>$p(w|X,y) \propto p(y|X,w)p(w)$</LATEX>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="431.800751879699" YPOS="1502" WIDTH="239.191729323308" HEIGHT="63.8458646616541" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 239.192 0 239.192 0 239.192 0 239.192 0 239.192 63.8459 239.192 63.8459 239.192 63.8459 239.192 63.8459 0 63.8459 0 63.8459 0 63.8459 0 63.8459 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 239.192 0 239.192 0 239.192 0 239.192 0 239.192 63.8459 239.192 63.8459 239.192 63.8459 239.192 63.8459 0 63.8459 0 63.8459 0 63.8459 0 63.8459 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="139.800751879699" YPOS="1783" WIDTH="257.699248120301" HEIGHT="193.25" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 257.699 0 257.699 0 257.699 0 257.699 0 257.699 193.25 257.699 193.25 257.699 193.25 257.699 193.25 0 193.25 0 193.25 0 193.25 0 193.25 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 257.699 0 257.699 0 257.699 0 257.699 0 257.699 193.25 257.699 193.25 257.699 193.25 257.699 193.25 0 193.25 0 193.25 0 193.25 0 193.25 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <ITEXT CH="Multi-class Logistic (one-vs-all, softmax loss derivatives and implementation)"/>
+            <para/>
+            <ITEXT CH="- multi-class yi is row of d [+1/-1]"/>
+            <para/>
+            <ITEXT CH="- multi-class classification, exactly one +1, encode as class k"/>
+            <para/>
+            <ITEXT CH="- can take max of yi to get correct classification"/>
+            <para/>
+            <para/>
+            <para/>
+            <para/>
+            <para/>
+            <ITEXT CH="- logistic regerssion for binary labels"/>
+            <para/>
+            <ITEXT CH="- softmax for multi-class"/>
+            <para/>
+            <ITEXT CH="- ordinal logistic regression, thresholds of sigmoid as params"/>
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="433.270676691729" YPOS="1422.41729323308" WIDTH="238.251879699248" HEIGHT="77.0676691729325" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 238.252 0 238.252 0 238.252 0 238.252 0 238.252 77.0677 238.252 77.0677 238.252 77.0677 238.252 77.0677 0 77.0677 0 77.0677 0 77.0677 0 77.0677 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 238.252 0 238.252 0 238.252 0 238.252 0 238.252 77.0677 238.252 77.0677 238.252 77.0677 238.252 77.0677 0 77.0677 0 77.0677 0 77.0677 0 77.0677 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="433.270676691729" YPOS="1480.41729323308" WIDTH="238.251879699248" HEIGHT="77.0676691729325" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 238.252 0 238.252 0 238.252 0 238.252 0 238.252 77.0677 238.252 77.0677 238.252 77.0677 238.252 77.0677 0 77.0677 0 77.0677 0 77.0677 0 77.0677 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 238.252 0 238.252 0 238.252 0 238.252 0 238.252 77.0677 238.252 77.0677 238.252 77.0677 238.252 77.0677 0 77.0677 0 77.0677 0 77.0677 0 77.0677 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <para/>
             <ITEXT CH="Regularized logistic regression (loss functions for binary classification, effect of different regularizers on overfitting and sparsity)"/>
             <trail/>
@@ -389,10 +448,24 @@ $f(w)=\sum_{i=1}^n \log(1+\exp(-y_iw^Tx_i)) + \frac \lambda 2 \lVert w \rVert^2$
                 <PROPERTY name="fontsize" value="11pt"/>$f(w)=-\log(p(w|X,y))=-\sum_{i=1}^n \log(p(y_i|x_i,w))-\sum_{j=1}^d \log(p(w_j))+const.$</LATEX>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="425.281954887218" YPOS="1980.41729323308" WIDTH="246.710526315789" HEIGHT="81.296992481203" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 246.711 0 246.711 0 246.711 0 246.711 0 246.711 81.297 246.711 81.297 246.711 81.297 246.711 81.297 0 81.297 0 81.297 0 81.297 0 81.297 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 246.711 0 246.711 0 246.711 0 246.711 0 246.711 81.297 246.711 81.297 246.711 81.297 246.711 81.297 0 81.297 0 81.297 0 81.297 0 81.297 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
-            <ITEXT CH="Stochastic gradient and neural networks (effect of step-size, effect of standardization, effect of initialization, effect of non-linearity, effect of regularization)"/>
+        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="425.281954887218" YPOS="2240.41729323308" WIDTH="246.710526315789" HEIGHT="196.08270676692" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 246.711 0 246.711 0 246.711 0 246.711 0 246.711 196.083 246.711 196.083 246.711 196.083 246.711 196.083 0 196.083 0 196.083 0 196.083 0 196.083 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 246.711 0 246.711 0 246.711 0 246.711 0 246.711 196.083 246.711 196.083 246.711 196.083 246.711 196.083 0 196.083 0 196.083 0 196.083 0 196.083 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT CH="Stochastic gradient and neural networks "/>
             <para/>
-            <ITEXT CH="- "/>
+            <ITEXT CH="- effect of step-size: too large = can't converge, too small = can't get to the solution"/>
+            <para/>
+            <ITEXT CH="- effect of standardization: helps typically"/>
+            <para/>
+            <ITEXT CH="- effect of initialization: random weights work better with non-convex losses"/>
+            <para/>
+            <ITEXT CH="- effect of non-linearity: makes it a universal approximator"/>
+            <para/>
+            <ITEXT CH="- effect of regularization: higher training error, better estimate of test error"/>
+            <para/>
+            <ITEXT CH="- Dropout: randomly set some xi, zi = 0"/>
+            <para/>
+            <ITEXT CH="- Convolutional"/>
+            <para/>
+            <ITEXT CH="- Vanishing gradient, ReLU (hinge loss)"/>
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
@@ -434,7 +507,7 @@ $f(w)=\sum_{i=1}^n \log(1+\exp(-y_iw^Tx_i)) + \frac \lambda 2 \lVert w \rVert^2$
 $w=\frac{\sum_{i=1}^n y_ix_i}{\sum_{i=1}^n x_i^2}$</LATEX>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="3" PTYPE="2" XPOS="140" YPOS="2910" WIDTH="451" HEIGHT="357.5" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.568010075566751" LOCALSCY="0.568010075566751" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../../2016-12-11-111903_794x621_scrot.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 451 0 451 0 451 0 451 0 451 357.5 451 357.5 451 357.5 451 357.5 0 357.5 0 357.5 0 357.5 0 357.5 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 451 0 451 0 451 0 451 0 451 357.5 451 357.5 451 357.5 451 357.5 0 357.5 0 357.5 0 357.5 0 357.5 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="3" PTYPE="2" XPOS="140" YPOS="2966.25" WIDTH="382" HEIGHT="301.25" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.481108312342569" LOCALSCY="0.481108312342569" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../../2016-12-11-111903_794x621_scrot.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 382 0 382 0 382 0 382 0 382 301.25 382 301.25 382 301.25 382 301.25 0 301.25 0 301.25 0 301.25 0 301.25 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 382 0 382 0 382 0 382 0 382 301.25 382 301.25 382 301.25 382 301.25 0 301.25 0 301.25 0 301.25 0 301.25 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
@@ -564,6 +637,137 @@ $\gamma A)^{-1} = \gamma^{-1}A^{-1}$
 
 $(AB)^{-1}=B^{-1}A^{-1}$
 </LATEX>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="9" XPOS="141.3308271" YPOS="1851.1578947" WIDTH="220.2941729" HEIGHT="44.9671053" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="-53.36779449" LOCALY="13.4085213" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 220.294 0 220.294 0 220.294 0 220.294 0 220.294 44.9671 220.294 44.9671 220.294 44.9671 220.294 44.9671 0 44.9671 0 44.9671 0 44.9671 0 44.9671 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 220.294 0 220.294 0 220.294 0 220.294 0 220.294 44.9671 220.294 44.9671 220.294 44.9671 220.294 44.9671 0 44.9671 0 44.9671 0 44.9671 0 44.9671 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="0" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <LATEX ConfigFile="100_latex.xml" DPI="300" USE_PREAMBLE="1">
+                <PROPERTY name="additionalheaders" value="\usepackage{amsmath}"/>
+                <PROPERTY name="font" value=""/>
+                <PROPERTY name="fontsize" value="11pt"/>softmax/multinomial logistic regression
+
+$p(y_i|x_i,w) = \frac{\exp(w_{y_i}^Tx_i)}{\sum_{c=1}^k \exp(w_c^Tx_i)}$</LATEX>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="9" XPOS="140.3308271" YPOS="572.1578947" WIDTH="124.2941729" HEIGHT="23.0921053000001" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="-53.36779449" LOCALY="13.4085213" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 124.294 0 124.294 0 124.294 0 124.294 0 124.294 23.0921 124.294 23.0921 124.294 23.0921 124.294 23.0921 0 23.0921 0 23.0921 0 23.0921 0 23.0921 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 124.294 0 124.294 0 124.294 0 124.294 0 124.294 23.0921 124.294 23.0921 124.294 23.0921 124.294 23.0921 0 23.0921 0 23.0921 0 23.0921 0 23.0921 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="0" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <LATEX ConfigFile="100_latex.xml" DPI="300" USE_PREAMBLE="1">
+                <PROPERTY name="additionalheaders" value="\usepackage{amsmath}"/>
+                <PROPERTY name="font" value=""/>
+                <PROPERTY name="fontsize" value="11pt"/>$P(A|B)=\frac{P(B|A)P(A)}{P(B)}$</LATEX>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="438.25" YPOS="1765.375" WIDTH="233.625" HEIGHT="209.375" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 233.625 0 233.625 0 233.625 0 233.625 0 233.625 209.375 233.625 209.375 233.625 209.375 233.625 209.375 0 209.375 0 209.375 0 209.375 0 209.375 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 233.625 0 233.625 0 233.625 0 233.625 0 233.625 209.375 233.625 209.375 233.625 209.375 233.625 209.375 0 209.375 0 209.375 0 209.375 0 209.375 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT CH="Multi-dimensional scaling (basic model, ISOMAP and geodesic distance)"/>
+            <para/>
+            <ITEXT CH="- Directly optimize the location of zi values"/>
+            <para/>
+            <ITEXT CH="- Gradient descent"/>
+            <para/>
+            <ITEXT CH="- non-convex, sensitive to initialization"/>
+            <para/>
+            <para/>
+            <para/>
+            <para/>
+            <ITEXT CH="ISOMAP: Geodesic distance"/>
+            <para/>
+            <ITEXT CH="- Use neighbors to compute edge weights"/>
+            <para/>
+            <ITEXT CH="- Use dijkstra's to find shortest path distances"/>
+            <para/>
+            <para/>
+            <ITEXT CH="t-SNE: wayyy better, but ugly hack"/>
+            <para/>
+            <ITEXT CH="- focus on small distances"/>
+            <para/>
+            <ITEXT CH="- allow large variance in large distances"/>
+            <para/>
+            <ITEXT CH="- not always better than PCA, can &quot;twist&quot; the plane"/>
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="9" XPOS="438.3308271" YPOS="1821.1578947" WIDTH="232.0441729" HEIGHT="22.7171053000006" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="-53.36779449" LOCALY="13.4085213" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 232.044 0 232.044 0 232.044 0 232.044 0 232.044 22.7171 232.044 22.7171 232.044 22.7171 232.044 22.7171 0 22.7171 0 22.7171 0 22.7171 0 22.7171 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 232.044 0 232.044 0 232.044 0 232.044 0 232.044 22.7171 232.044 22.7171 232.044 22.7171 232.044 22.7171 0 22.7171 0 22.7171 0 22.7171 0 22.7171 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="0" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <LATEX ConfigFile="100_latex.xml" DPI="300" USE_PREAMBLE="1">
+                <PROPERTY name="additionalheaders" value="\usepackage{amsmath}"/>
+                <PROPERTY name="font" value=""/>
+                <PROPERTY name="fontsize" value="11pt"/>$f(Z) = \sum_{i=1}^n \sum_{j=i+1}^n d_3(d_2(z_i,z_j)-d_1(x_i,x_j))$</LATEX>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="9" XPOS="140.3308271" YPOS="2099.1578947" WIDTH="269.0441729" HEIGHT="22.7171053000004" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="-53.36779449" LOCALY="13.4085213" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 269.044 0 269.044 0 269.044 0 269.044 0 269.044 22.7171 269.044 22.7171 269.044 22.7171 269.044 22.7171 0 22.7171 0 22.7171 0 22.7171 0 22.7171 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 269.044 0 269.044 0 269.044 0 269.044 0 269.044 22.7171 269.044 22.7171 269.044 22.7171 269.044 22.7171 0 22.7171 0 22.7171 0 22.7171 0 22.7171 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="0" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <LATEX ConfigFile="100_latex.xml" DPI="300" USE_PREAMBLE="1">
+                <PROPERTY name="additionalheaders" value="\usepackage{amsmath}"/>
+                <PROPERTY name="font" value=""/>
+                <PROPERTY name="fontsize" value="11pt"/>$f(W,Z)=\frac12 \sum_{i=1}^n\sum_{j=1}^d (w_j^Tz_i-x_{ij})^2=\frac12\lVert ZW-X\rVert^2_F$</LATEX>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="3" PTYPE="4" XPOS="351.75" YPOS="2554.75" WIDTH="318.75" HEIGHT="426.25" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" ISIZE="8" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 318.75 0 318.75 0 318.75 0 318.75 0 318.75 426.25 318.75 426.25 318.75 426.25 318.75 426.25 0 426.25 0 426.25 0 426.25 0 426.25 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 318.75 0 318.75 0 318.75 0 318.75 0 318.75 426.25 318.75 426.25 318.75 426.25 318.75 426.25 0 426.25 0 426.25 0 426.25 0 426.25 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONTSIZE="8" CH="Assignment 1:"/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Summary statistics (like range, median, and quantiles)."/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Data visualization (histogram, scatterplot, and box plot)."/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Decision trees (how to fit stumps using classification error, how to classify a new example, runtime in O() notation, effect of depth)."/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Learning theory (training vs. test error, validation sets and cross-validation, fundamental trade-off)"/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Naive Bayes (conditional probability, fitting the probabilities, classifying a new example, runtime)."/>
+            <para/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Assignment 2:"/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="K-nearest neighbours (how to classify a new example, runtime in O() notation, effect of k, condensed version)."/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Random forests (what bootstrap does, how random trees works, effect of number of trees/random-features, how to classify new example)."/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="K-Means (effect of initialization, error functions, runtime, how to cluster new example, elbow method, k-medians, vector quantization)."/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Density-based clustering (effect of parameters, shape of clusters)."/>
+            <para/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Assignment 3:"/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Vectors/matrices/norms (summation and vector/matrix/norm notation, minimizing quadratic functions as linear systems)"/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Linear regression (adding bias, change of basis, RBFs, regularization, cost of training/testing, effect of basis parameters)."/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Robust regression (weighted least squares, smooth approximations, computing gradients)."/>
+            <para/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Assignment 4:"/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Regularized logistic regression (loss functions for binary classification, effect of different regularizers on overfitting and sparsity)"/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Convex and MLE/MAP estimation (showing functions are convex, connection between probabilities and losses/regularizers)"/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Multi-class Logistic (one-vs-all, softmax loss derivatives and implementation)"/>
+            <para/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Assignment 5:"/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="PCA (computing 1st PC, scaling issue, PCA for visualization, PCA for compression)"/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Beyond PCA (different loss functions, effect of regularizers)"/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Multi-dimensional scaling (basic model, ISOMAP and geodesic distance)"/>
+            <para/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Assignment 6:"/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="PageRank (random walk model)"/>
+            <para/>
+            <ITEXT FONTSIZE="8" CH="Stochastic gradient and neural networks (effect of step-size, effect of standardization, effect of initialization, effect of non-linearity, effect of regularization)"/>
+            <para/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="9" XPOS="139.3308271" YPOS="2238.1578947" WIDTH="269.0441729" HEIGHT="22.7171053" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="-53.36779449" LOCALY="13.4085213" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 269.044 0 269.044 0 269.044 0 269.044 0 269.044 22.7171 269.044 22.7171 269.044 22.7171 269.044 22.7171 0 22.7171 0 22.7171 0 22.7171 0 22.7171 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 269.044 0 269.044 0 269.044 0 269.044 0 269.044 22.7171 269.044 22.7171 269.044 22.7171 269.044 22.7171 0 22.7171 0 22.7171 0 22.7171 0 22.7171 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="0" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <LATEX ConfigFile="100_latex.xml" DPI="300" USE_PREAMBLE="1">
+                <PROPERTY name="additionalheaders" value="\usepackage{amsmath}"/>
+                <PROPERTY name="font" value=""/>
+                <PROPERTY name="fontsize" value="11pt"/>$var(X) = \frac1n \lVert X \rVert_F^2$</LATEX>
             <PageItemAttributes/>
         </PAGEOBJECT>
     </DOCUMENT>
